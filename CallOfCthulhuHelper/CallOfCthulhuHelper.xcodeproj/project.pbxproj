@@ -19,6 +19,10 @@
 		BFD414B91947805800F0A987 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD414951947805800F0A987 /* Cocoa.framework */; };
 		BFD414C11947805800F0A987 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFD414BF1947805800F0A987 /* InfoPlist.strings */; };
 		BFD414C31947805800F0A987 /* CallOfCthulhuHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD414C21947805800F0A987 /* CallOfCthulhuHelperTests.m */; };
+		BFD414DB19478F6100F0A987 /* MasterWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD414D919478F6100F0A987 /* MasterWindowController.m */; };
+		BFD414DC19478F6100F0A987 /* MasterWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD414DA19478F6100F0A987 /* MasterWindowController.xib */; };
+		BFD414E21947A02500F0A987 /* InvestigatorsWC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD414E01947A02500F0A987 /* InvestigatorsWC.m */; };
+		BFD414E31947A02500F0A987 /* InvestigatorsWC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD414E11947A02500F0A987 /* InvestigatorsWC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,12 @@
 		BFD414BE1947805800F0A987 /* CallOfCthulhuHelperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CallOfCthulhuHelperTests-Info.plist"; sourceTree = "<group>"; };
 		BFD414C01947805800F0A987 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BFD414C21947805800F0A987 /* CallOfCthulhuHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallOfCthulhuHelperTests.m; sourceTree = "<group>"; };
+		BFD414D819478F6100F0A987 /* MasterWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterWindowController.h; sourceTree = "<group>"; };
+		BFD414D919478F6100F0A987 /* MasterWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterWindowController.m; sourceTree = "<group>"; };
+		BFD414DA19478F6100F0A987 /* MasterWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterWindowController.xib; sourceTree = "<group>"; };
+		BFD414DF1947A02500F0A987 /* InvestigatorsWC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvestigatorsWC.h; sourceTree = "<group>"; };
+		BFD414E01947A02500F0A987 /* InvestigatorsWC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestigatorsWC.m; sourceTree = "<group>"; };
+		BFD414E11947A02500F0A987 /* InvestigatorsWC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestigatorsWC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +127,7 @@
 		BFD4149B1947805800F0A987 /* CallOfCthulhuHelper */ = {
 			isa = PBXGroup;
 			children = (
+				BFD414DE19479FF000F0A987 /* WC */,
 				BFD414A71947805800F0A987 /* AppDelegate.h */,
 				BFD414A81947805800F0A987 /* AppDelegate.m */,
 				BFD414AA1947805800F0A987 /* MainMenu.xib */,
@@ -155,6 +166,35 @@
 				BFD414BF1947805800F0A987 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFD414DD19478F6B00F0A987 /* MasterWC */ = {
+			isa = PBXGroup;
+			children = (
+				BFD414D819478F6100F0A987 /* MasterWindowController.h */,
+				BFD414D919478F6100F0A987 /* MasterWindowController.m */,
+				BFD414DA19478F6100F0A987 /* MasterWindowController.xib */,
+			);
+			name = MasterWC;
+			sourceTree = "<group>";
+		};
+		BFD414DE19479FF000F0A987 /* WC */ = {
+			isa = PBXGroup;
+			children = (
+				BFD414DD19478F6B00F0A987 /* MasterWC */,
+				BFD414E41947A02C00F0A987 /* InvestigatorsWC */,
+			);
+			name = WC;
+			sourceTree = "<group>";
+		};
+		BFD414E41947A02C00F0A987 /* InvestigatorsWC */ = {
+			isa = PBXGroup;
+			children = (
+				BFD414DF1947A02500F0A987 /* InvestigatorsWC.h */,
+				BFD414E01947A02500F0A987 /* InvestigatorsWC.m */,
+				BFD414E11947A02500F0A987 /* InvestigatorsWC.xib */,
+			);
+			name = InvestigatorsWC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +275,9 @@
 			files = (
 				BFD414A01947805800F0A987 /* InfoPlist.strings in Resources */,
 				BFD414B11947805800F0A987 /* Images.xcassets in Resources */,
+				BFD414DC19478F6100F0A987 /* MasterWindowController.xib in Resources */,
 				BFD414A61947805800F0A987 /* Credits.rtf in Resources */,
+				BFD414E31947A02500F0A987 /* InvestigatorsWC.xib in Resources */,
 				BFD414AC1947805800F0A987 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +300,8 @@
 				BFD414A91947805800F0A987 /* AppDelegate.m in Sources */,
 				BFD414AF1947805800F0A987 /* CallOfCthulhuHelper.xcdatamodeld in Sources */,
 				BFD414A21947805800F0A987 /* main.m in Sources */,
+				BFD414E21947A02500F0A987 /* InvestigatorsWC.m in Sources */,
+				BFD414DB19478F6100F0A987 /* MasterWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +514,7 @@
 				BFD414C81947805800F0A987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFD414C91947805800F0A987 /* Build configuration list for PBXNativeTarget "CallOfCthulhuHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +523,7 @@
 				BFD414CB1947805800F0A987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

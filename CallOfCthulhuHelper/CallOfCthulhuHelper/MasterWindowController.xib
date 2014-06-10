@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MasterWindowController">
+            <connections>
+                <outlet property="btnAdventures" destination="Ipe-J1-Tpz" id="4gO-AW-IbF"/>
+                <outlet property="btnInvestigators" destination="s2S-rv-a6L" id="Pfa-2L-rmk"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="250" height="393"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="393"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s2S-rv-a6L">
+                        <rect key="frame" x="38" y="354" width="175" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="roundRect" title="Investigators" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="c7w-lW-4Az">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="controlContent"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="btnInvestigators:" target="-2" id="y4y-zB-XG7"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ipe-J1-Tpz">
+                        <rect key="frame" x="38" y="328" width="175" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="roundRect" title="Adventures" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MZG-ku-yRg">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="controlContent"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="btnAdventures:" target="-2" id="te1-Px-SxD"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kPH-8q-rV8">
+                        <rect key="frame" x="38" y="302" width="175" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="roundRect" title="Help desk" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qsE-OR-grn">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="controlContent"/>
+                        </buttonCell>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ipe-J1-Tpz" firstAttribute="leading" secondItem="s2S-rv-a6L" secondAttribute="leading" id="75k-Ow-LVX"/>
+                    <constraint firstItem="kPH-8q-rV8" firstAttribute="trailing" secondItem="Ipe-J1-Tpz" secondAttribute="trailing" id="ISg-0A-U9p"/>
+                    <constraint firstItem="Ipe-J1-Tpz" firstAttribute="trailing" secondItem="s2S-rv-a6L" secondAttribute="trailing" id="Ma8-yv-sOA"/>
+                    <constraint firstItem="s2S-rv-a6L" firstAttribute="centerX" secondItem="se5-gp-TjO" secondAttribute="centerX" id="NgJ-rW-0kI"/>
+                    <constraint firstItem="s2S-rv-a6L" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="38" id="dEz-b9-aZ5"/>
+                    <constraint firstItem="Ipe-J1-Tpz" firstAttribute="top" secondItem="s2S-rv-a6L" secondAttribute="bottom" constant="8" symbolic="YES" id="eG4-KA-UZe"/>
+                    <constraint firstItem="kPH-8q-rV8" firstAttribute="leading" secondItem="Ipe-J1-Tpz" secondAttribute="leading" id="qDY-6c-WoT"/>
+                    <constraint firstItem="s2S-rv-a6L" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" symbolic="YES" id="twq-xb-Ndh"/>
+                    <constraint firstItem="kPH-8q-rV8" firstAttribute="top" secondItem="Ipe-J1-Tpz" secondAttribute="bottom" constant="8" symbolic="YES" id="uJO-Yz-tgb"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+        </window>
+    </objects>
+</document>

@@ -8,6 +8,12 @@
 
 #import "AppDelegate.h"
 
+#import "MasterWindowController.h"
+
+@interface  AppDelegate()
+@property (nonatomic,strong) IBOutlet MasterWindowController *masterWindowController;
+@end
+
 @implementation AppDelegate
 
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
@@ -16,7 +22,10 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    if (!self.masterWindowController || !self.masterWindowController.window.isVisible){
+        self.masterWindowController = [[MasterWindowController alloc] initWithWindowNibName:@"MasterWindowController"];
+        [self.masterWindowController showWindow:self];
+    }
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "kroshmelot.CallOfCthulhuHelper" in the user's Application Support directory.
