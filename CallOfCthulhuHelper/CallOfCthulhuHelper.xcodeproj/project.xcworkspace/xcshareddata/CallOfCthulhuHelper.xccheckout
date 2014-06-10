@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A8665921-1387-4802-B64D-A15FBF2EA047</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CallOfCthulhuHelper</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>88D9AFB1-0302-4094-9A1E-7ED9BE107EFF</key>
+		<string>ssh://github.com/EK-MAG/CallOfCthulhuHelper.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CallOfCthulhuHelper/CallOfCthulhuHelper.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>88D9AFB1-0302-4094-9A1E-7ED9BE107EFF</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/EK-MAG/CallOfCthulhuHelper.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>88D9AFB1-0302-4094-9A1E-7ED9BE107EFF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>88D9AFB1-0302-4094-9A1E-7ED9BE107EFF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CallOfCthulhuHelper</string>
+		</dict>
+	</array>
+</dict>
+</plist>

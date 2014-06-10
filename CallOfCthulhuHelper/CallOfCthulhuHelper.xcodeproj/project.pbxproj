@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFD414961947805800F0A987 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD414951947805800F0A987 /* Cocoa.framework */; };
+		BFD414A01947805800F0A987 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFD4149E1947805800F0A987 /* InfoPlist.strings */; };
+		BFD414A21947805800F0A987 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD414A11947805800F0A987 /* main.m */; };
+		BFD414A61947805800F0A987 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BFD414A41947805800F0A987 /* Credits.rtf */; };
+		BFD414A91947805800F0A987 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD414A81947805800F0A987 /* AppDelegate.m */; };
+		BFD414AC1947805800F0A987 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD414AA1947805800F0A987 /* MainMenu.xib */; };
+		BFD414AF1947805800F0A987 /* CallOfCthulhuHelper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFD414AD1947805800F0A987 /* CallOfCthulhuHelper.xcdatamodeld */; };
+		BFD414B11947805800F0A987 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD414B01947805800F0A987 /* Images.xcassets */; };
+		BFD414B81947805800F0A987 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD414B71947805800F0A987 /* XCTest.framework */; };
+		BFD414B91947805800F0A987 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD414951947805800F0A987 /* Cocoa.framework */; };
+		BFD414C11947805800F0A987 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFD414BF1947805800F0A987 /* InfoPlist.strings */; };
+		BFD414C31947805800F0A987 /* CallOfCthulhuHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD414C21947805800F0A987 /* CallOfCthulhuHelperTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFD414BA1947805800F0A987 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFD4148A1947805800F0A987 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFD414911947805800F0A987;
+			remoteInfo = CallOfCthulhuHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFD414921947805800F0A987 /* CallOfCthulhuHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallOfCthulhuHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD414951947805800F0A987 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BFD414981947805800F0A987 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BFD414991947805800F0A987 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BFD4149A1947805800F0A987 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BFD4149D1947805800F0A987 /* CallOfCthulhuHelper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CallOfCthulhuHelper-Info.plist"; sourceTree = "<group>"; };
+		BFD4149F1947805800F0A987 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BFD414A11947805800F0A987 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFD414A31947805800F0A987 /* CallOfCthulhuHelper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CallOfCthulhuHelper-Prefix.pch"; sourceTree = "<group>"; };
+		BFD414A51947805800F0A987 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BFD414A71947805800F0A987 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BFD414A81947805800F0A987 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BFD414AB1947805800F0A987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BFD414AE1947805800F0A987 /* CallOfCthulhuHelper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CallOfCthulhuHelper.xcdatamodel; sourceTree = "<group>"; };
+		BFD414B01947805800F0A987 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BFD414B61947805800F0A987 /* CallOfCthulhuHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallOfCthulhuHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD414B71947805800F0A987 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BFD414BE1947805800F0A987 /* CallOfCthulhuHelperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CallOfCthulhuHelperTests-Info.plist"; sourceTree = "<group>"; };
+		BFD414C01947805800F0A987 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BFD414C21947805800F0A987 /* CallOfCthulhuHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallOfCthulhuHelperTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFD4148F1947805800F0A987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD414961947805800F0A987 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFD414B31947805800F0A987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD414B91947805800F0A987 /* Cocoa.framework in Frameworks */,
+				BFD414B81947805800F0A987 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFD414891947805800F0A987 = {
+			isa = PBXGroup;
+			children = (
+				BFD4149B1947805800F0A987 /* CallOfCthulhuHelper */,
+				BFD414BC1947805800F0A987 /* CallOfCthulhuHelperTests */,
+				BFD414941947805800F0A987 /* Frameworks */,
+				BFD414931947805800F0A987 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFD414931947805800F0A987 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFD414921947805800F0A987 /* CallOfCthulhuHelper.app */,
+				BFD414B61947805800F0A987 /* CallOfCthulhuHelperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFD414941947805800F0A987 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFD414951947805800F0A987 /* Cocoa.framework */,
+				BFD414B71947805800F0A987 /* XCTest.framework */,
+				BFD414971947805800F0A987 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFD414971947805800F0A987 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFD414981947805800F0A987 /* AppKit.framework */,
+				BFD414991947805800F0A987 /* CoreData.framework */,
+				BFD4149A1947805800F0A987 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BFD4149B1947805800F0A987 /* CallOfCthulhuHelper */ = {
+			isa = PBXGroup;
+			children = (
+				BFD414A71947805800F0A987 /* AppDelegate.h */,
+				BFD414A81947805800F0A987 /* AppDelegate.m */,
+				BFD414AA1947805800F0A987 /* MainMenu.xib */,
+				BFD414B01947805800F0A987 /* Images.xcassets */,
+				BFD414AD1947805800F0A987 /* CallOfCthulhuHelper.xcdatamodeld */,
+				BFD4149C1947805800F0A987 /* Supporting Files */,
+			);
+			path = CallOfCthulhuHelper;
+			sourceTree = "<group>";
+		};
+		BFD4149C1947805800F0A987 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFD4149D1947805800F0A987 /* CallOfCthulhuHelper-Info.plist */,
+				BFD4149E1947805800F0A987 /* InfoPlist.strings */,
+				BFD414A11947805800F0A987 /* main.m */,
+				BFD414A31947805800F0A987 /* CallOfCthulhuHelper-Prefix.pch */,
+				BFD414A41947805800F0A987 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFD414BC1947805800F0A987 /* CallOfCthulhuHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFD414C21947805800F0A987 /* CallOfCthulhuHelperTests.m */,
+				BFD414BD1947805800F0A987 /* Supporting Files */,
+			);
+			path = CallOfCthulhuHelperTests;
+			sourceTree = "<group>";
+		};
+		BFD414BD1947805800F0A987 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFD414BE1947805800F0A987 /* CallOfCthulhuHelperTests-Info.plist */,
+				BFD414BF1947805800F0A987 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFD414911947805800F0A987 /* CallOfCthulhuHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFD414C61947805800F0A987 /* Build configuration list for PBXNativeTarget "CallOfCthulhuHelper" */;
+			buildPhases = (
+				BFD4148E1947805800F0A987 /* Sources */,
+				BFD4148F1947805800F0A987 /* Frameworks */,
+				BFD414901947805800F0A987 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallOfCthulhuHelper;
+			productName = CallOfCthulhuHelper;
+			productReference = BFD414921947805800F0A987 /* CallOfCthulhuHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFD414B51947805800F0A987 /* CallOfCthulhuHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFD414C91947805800F0A987 /* Build configuration list for PBXNativeTarget "CallOfCthulhuHelperTests" */;
+			buildPhases = (
+				BFD414B21947805800F0A987 /* Sources */,
+				BFD414B31947805800F0A987 /* Frameworks */,
+				BFD414B41947805800F0A987 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFD414BB1947805800F0A987 /* PBXTargetDependency */,
+			);
+			name = CallOfCthulhuHelperTests;
+			productName = CallOfCthulhuHelperTests;
+			productReference = BFD414B61947805800F0A987 /* CallOfCthulhuHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFD4148A1947805800F0A987 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Kroshmelot;
+				TargetAttributes = {
+					BFD414B51947805800F0A987 = {
+						TestTargetID = BFD414911947805800F0A987;
+					};
+				};
+			};
+			buildConfigurationList = BFD4148D1947805800F0A987 /* Build configuration list for PBXProject "CallOfCthulhuHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFD414891947805800F0A987;
+			productRefGroup = BFD414931947805800F0A987 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFD414911947805800F0A987 /* CallOfCthulhuHelper */,
+				BFD414B51947805800F0A987 /* CallOfCthulhuHelperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFD414901947805800F0A987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD414A01947805800F0A987 /* InfoPlist.strings in Resources */,
+				BFD414B11947805800F0A987 /* Images.xcassets in Resources */,
+				BFD414A61947805800F0A987 /* Credits.rtf in Resources */,
+				BFD414AC1947805800F0A987 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFD414B41947805800F0A987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD414C11947805800F0A987 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFD4148E1947805800F0A987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD414A91947805800F0A987 /* AppDelegate.m in Sources */,
+				BFD414AF1947805800F0A987 /* CallOfCthulhuHelper.xcdatamodeld in Sources */,
+				BFD414A21947805800F0A987 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFD414B21947805800F0A987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD414C31947805800F0A987 /* CallOfCthulhuHelperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFD414BB1947805800F0A987 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFD414911947805800F0A987 /* CallOfCthulhuHelper */;
+			targetProxy = BFD414BA1947805800F0A987 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFD4149E1947805800F0A987 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFD4149F1947805800F0A987 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BFD414A41947805800F0A987 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFD414A51947805800F0A987 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BFD414AA1947805800F0A987 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFD414AB1947805800F0A987 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		BFD414BF1947805800F0A987 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFD414C01947805800F0A987 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFD414C41947805800F0A987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BFD414C51947805800F0A987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BFD414C71947805800F0A987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CallOfCthulhuHelper/CallOfCthulhuHelper-Prefix.pch";
+				INFOPLIST_FILE = "CallOfCthulhuHelper/CallOfCthulhuHelper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BFD414C81947805800F0A987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CallOfCthulhuHelper/CallOfCthulhuHelper-Prefix.pch";
+				INFOPLIST_FILE = "CallOfCthulhuHelper/CallOfCthulhuHelper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BFD414CA1947805800F0A987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CallOfCthulhuHelper.app/Contents/MacOS/CallOfCthulhuHelper";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CallOfCthulhuHelper/CallOfCthulhuHelper-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CallOfCthulhuHelperTests/CallOfCthulhuHelperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BFD414CB1947805800F0A987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CallOfCthulhuHelper.app/Contents/MacOS/CallOfCthulhuHelper";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CallOfCthulhuHelper/CallOfCthulhuHelper-Prefix.pch";
+				INFOPLIST_FILE = "CallOfCthulhuHelperTests/CallOfCthulhuHelperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFD4148D1947805800F0A987 /* Build configuration list for PBXProject "CallOfCthulhuHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFD414C41947805800F0A987 /* Debug */,
+				BFD414C51947805800F0A987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFD414C61947805800F0A987 /* Build configuration list for PBXNativeTarget "CallOfCthulhuHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFD414C71947805800F0A987 /* Debug */,
+				BFD414C81947805800F0A987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BFD414C91947805800F0A987 /* Build configuration list for PBXNativeTarget "CallOfCthulhuHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFD414CA1947805800F0A987 /* Debug */,
+				BFD414CB1947805800F0A987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BFD414AD1947805800F0A987 /* CallOfCthulhuHelper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BFD414AE1947805800F0A987 /* CallOfCthulhuHelper.xcdatamodel */,
+			);
+			currentVersion = BFD414AE1947805800F0A987 /* CallOfCthulhuHelper.xcdatamodel */;
+			path = CallOfCthulhuHelper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BFD4148A1947805800F0A987 /* Project object */;
+}
