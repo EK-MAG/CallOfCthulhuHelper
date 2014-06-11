@@ -9,6 +9,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface MasterWindowController : NSWindowController
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 @property (weak) IBOutlet NSButton *btnInvestigators;
 @property (weak) IBOutlet NSButton *btnAdventures;
 

@@ -24,6 +24,7 @@
 {
     if (!self.masterWindowController || !self.masterWindowController.window.isVisible){
         self.masterWindowController = [[MasterWindowController alloc] initWithWindowNibName:@"MasterWindowController"];
+        self.masterWindowController.managedObjectContext = self.managedObjectContext;
         [self.masterWindowController showWindow:self];
     }
 }

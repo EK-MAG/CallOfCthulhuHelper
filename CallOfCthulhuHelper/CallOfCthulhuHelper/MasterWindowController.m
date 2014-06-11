@@ -25,6 +25,7 @@
 - (IBAction)btnInvestigators:(id)sender {
     if (!self.investigatorsWC || !self.investigatorsWC.window.isVisible){
         self.investigatorsWC = [[InvestigatorsWC alloc] initWithWindowNibName:@"InvestigatorsWC"];
+        self.investigatorsWC.managedObjectContext = self.managedObjectContext;
         [self.investigatorsWC showWindow:self];
     }
 }

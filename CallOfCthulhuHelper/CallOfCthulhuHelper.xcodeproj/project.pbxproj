@@ -23,6 +23,8 @@
 		BFD414DC19478F6100F0A987 /* MasterWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD414DA19478F6100F0A987 /* MasterWindowController.xib */; };
 		BFD414E21947A02500F0A987 /* InvestigatorsWC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD414E01947A02500F0A987 /* InvestigatorsWC.m */; };
 		BFD414E31947A02500F0A987 /* InvestigatorsWC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD414E11947A02500F0A987 /* InvestigatorsWC.xib */; };
+		BFD414E71947BB9C00F0A987 /* Skill.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD414E61947BB9C00F0A987 /* Skill.m */; };
+		BFD414EA1947BB9C00F0A987 /* Investigator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD414E91947BB9C00F0A987 /* Investigator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,10 @@
 		BFD414DF1947A02500F0A987 /* InvestigatorsWC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvestigatorsWC.h; sourceTree = "<group>"; };
 		BFD414E01947A02500F0A987 /* InvestigatorsWC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestigatorsWC.m; sourceTree = "<group>"; };
 		BFD414E11947A02500F0A987 /* InvestigatorsWC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestigatorsWC.xib; sourceTree = "<group>"; };
+		BFD414E51947BB9C00F0A987 /* Skill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Skill.h; sourceTree = "<group>"; };
+		BFD414E61947BB9C00F0A987 /* Skill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Skill.m; sourceTree = "<group>"; };
+		BFD414E81947BB9C00F0A987 /* Investigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Investigator.h; sourceTree = "<group>"; };
+		BFD414E91947BB9C00F0A987 /* Investigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Investigator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,12 +133,12 @@
 		BFD4149B1947805800F0A987 /* CallOfCthulhuHelper */ = {
 			isa = PBXGroup;
 			children = (
+				BFD414EB1947BBA500F0A987 /* model */,
 				BFD414DE19479FF000F0A987 /* WC */,
 				BFD414A71947805800F0A987 /* AppDelegate.h */,
 				BFD414A81947805800F0A987 /* AppDelegate.m */,
 				BFD414AA1947805800F0A987 /* MainMenu.xib */,
 				BFD414B01947805800F0A987 /* Images.xcassets */,
-				BFD414AD1947805800F0A987 /* CallOfCthulhuHelper.xcdatamodeld */,
 				BFD4149C1947805800F0A987 /* Supporting Files */,
 			);
 			path = CallOfCthulhuHelper;
@@ -195,6 +201,18 @@
 				BFD414E11947A02500F0A987 /* InvestigatorsWC.xib */,
 			);
 			name = InvestigatorsWC;
+			sourceTree = "<group>";
+		};
+		BFD414EB1947BBA500F0A987 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BFD414AD1947805800F0A987 /* CallOfCthulhuHelper.xcdatamodeld */,
+				BFD414E81947BB9C00F0A987 /* Investigator.h */,
+				BFD414E91947BB9C00F0A987 /* Investigator.m */,
+				BFD414E51947BB9C00F0A987 /* Skill.h */,
+				BFD414E61947BB9C00F0A987 /* Skill.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,8 +318,10 @@
 				BFD414A91947805800F0A987 /* AppDelegate.m in Sources */,
 				BFD414AF1947805800F0A987 /* CallOfCthulhuHelper.xcdatamodeld in Sources */,
 				BFD414A21947805800F0A987 /* main.m in Sources */,
+				BFD414E71947BB9C00F0A987 /* Skill.m in Sources */,
 				BFD414E21947A02500F0A987 /* InvestigatorsWC.m in Sources */,
 				BFD414DB19478F6100F0A987 /* MasterWindowController.m in Sources */,
+				BFD414EA1947BB9C00F0A987 /* Investigator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

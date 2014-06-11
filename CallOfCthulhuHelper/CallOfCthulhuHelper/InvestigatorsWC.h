@@ -7,7 +7,18 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Investigator.h"
+#import "Skill.h"
 
-@interface InvestigatorsWC : NSWindowController
+@interface InvestigatorsWC : NSWindowController <NSTextFieldDelegate>
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong) IBOutlet NSArrayController *investigatorArrayController;
 
+@property (weak) IBOutlet NSButtonCell *btnEditName;
+
+@property (weak) IBOutlet NSTextField *textFieldName;
+
+@property (weak) IBOutlet NSTextField *lblName;
+
+- (IBAction)btnEditName:(id)sender;
 @end

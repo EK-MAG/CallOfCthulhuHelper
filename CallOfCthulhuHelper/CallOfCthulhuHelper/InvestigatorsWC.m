@@ -10,24 +10,38 @@
 
 @interface InvestigatorsWC ()
 
+@property (nonatomic, strong) NSArray *arrayyy;
+
 @end
 
 @implementation InvestigatorsWC
 
-- (id)initWithWindow:(NSWindow *)window
-{
-    self = [super initWithWindow:window];
-    if (self) {
-        // Initialization code here.
-    }
-    return self;
-}
-
 - (void)windowDidLoad
 {
     [super windowDidLoad];
-    
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+
+    [self.textFieldName setHidden:YES];
 }
 
+
+#pragma mark model
+-(Investigator *)getCurrentInvestigator {
+    if ([[self.investigatorArrayController selectedObjects] count] > 0) {
+        return [self.investigatorArrayController selectedObjects][0];
+    } else {
+        return nil;
+    }
+}
+
+
+#pragma mark buttons
+
+- (IBAction)btnEditName:(id)sender {
+    [self.textFieldName setHidden:NO];
+}
+
+#pragma mark NSTextField Delegate
+- (void)controlTextDidEndEditing:(NSNotification *)obj {
+    [self.textFieldName setHidden:YES];
+}
 @end

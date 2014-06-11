@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="untitled.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Investigator" representedClassName="Investigator" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="birthplace" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="degrees" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="history" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="occupation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="skills" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Skill" inverseName="skillOf" inverseEntity="Skill" syncable="YES"/>
+    </entity>
+    <entity name="Skill" representedClassName="Skill" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="skillOf" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Investigator" inverseName="skills" inverseEntity="Investigator" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Investigator" positionX="-693" positionY="-1440" width="117" height="178"/>
+        <element name="Skill" positionX="-963" positionY="-1359" width="128" height="88"/>
+    </elements>
 </model>
