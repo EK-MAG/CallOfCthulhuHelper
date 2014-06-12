@@ -13,7 +13,9 @@
 
 @property (weak) IBOutlet NSButton *btnInvestigators;
 @property (weak) IBOutlet NSButton *btnAdventures;
+@property (weak) IBOutlet NSButtonCell *btnSkills;
 
 - (IBAction)btnInvestigators:(id)sender;
 - (IBAction)btnAdventures:(id)sender;
+- (IBAction)btnSkills:(id)sender;
 @end

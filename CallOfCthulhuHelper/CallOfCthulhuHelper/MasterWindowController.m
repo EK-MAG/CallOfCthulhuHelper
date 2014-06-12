@@ -8,10 +8,12 @@
 
 #import "MasterWindowController.h"
 #import "InvestigatorsWC.h"
+#import "SkillsWC.h"
 
 @interface MasterWindowController ()
 
 @property (nonatomic,strong) IBOutlet InvestigatorsWC *investigatorsWC;
+@property (nonatomic,strong) IBOutlet SkillsWC *skillsWC;
 
 @end
 
@@ -31,5 +33,13 @@
 }
 
 - (IBAction)btnAdventures:(id)sender {
+}
+
+- (IBAction)btnSkills:(id)sender {
+    if (!self.skillsWC || !self.skillsWC.window.isVisible){
+        self.skillsWC = [[SkillsWC alloc] initWithWindowNibName:@"SkillsWC"];
+        self.skillsWC.managedObjectContext = self.managedObjectContext;
+        [self.skillsWC showWindow:self];
+    }
 }
 @end

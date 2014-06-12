@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="btnAdventures" destination="Ipe-J1-Tpz" id="4gO-AW-IbF"/>
                 <outlet property="btnInvestigators" destination="s2S-rv-a6L" id="Pfa-2L-rmk"/>
+                <outlet property="btnSkills" destination="qsE-OR-grn" id="PqC-nk-Q7Y"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -27,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="roundRect" title="Investigators" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="c7w-lW-4Az">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="controlContent"/>
+                            <font key="font" metaFont="cellTitle"/>
                         </buttonCell>
                         <connections>
                             <action selector="btnInvestigators:" target="-2" id="y4y-zB-XG7"/>
@@ -38,7 +39,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="roundRect" title="Adventures" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MZG-ku-yRg">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="controlContent"/>
+                            <font key="font" metaFont="cellTitle"/>
                         </buttonCell>
                         <connections>
                             <action selector="btnAdventures:" target="-2" id="te1-Px-SxD"/>
@@ -47,9 +48,12 @@
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kPH-8q-rV8">
                         <rect key="frame" x="38" y="302" width="175" height="19"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="roundRect" title="Help desk" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qsE-OR-grn">
+                        <buttonCell key="cell" type="roundRect" title="Skills" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qsE-OR-grn">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="controlContent"/>
+                            <font key="font" metaFont="cellTitle"/>
+                            <connections>
+                                <action selector="btnSkills:" target="-2" id="Jjd-6o-0Zp"/>
+                            </connections>
                         </buttonCell>
                     </button>
                 </subviews>

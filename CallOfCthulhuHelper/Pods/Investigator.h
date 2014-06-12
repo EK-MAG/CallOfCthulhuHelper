@@ -1,9 +1,9 @@
 //
 //  Investigator.h
-//  CallOfCthulhuHelper
+//  Pods
 //
 //  Created by Kroshmelot on 12.06.14.
-//  Copyright (c) 2014 Kroshmelot. All rights reserved.
+//
 //
 
 #import <Foundation/Foundation.h>
